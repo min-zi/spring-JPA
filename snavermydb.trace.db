@@ -1,0 +1,54 @@
+2022-07-25 13:55:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a       id varchar(255) not null,\000d\000a        favorite_food varchar(255) not null,\000d\000a        nickname varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+       id varchar(255) not null,
+        favorite_food varchar(255) not null,
+        nickname varchar(255) not null,
+        primary key (id)
+    ) [42001-214]
+2022-07-26 00:06:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a       id varchar(255) not null,\000d\000a        favorite_food varchar(255) not null,\000d\000a        nickname varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+       id varchar(255) not null,
+        favorite_food varchar(255) not null,
+        nickname varchar(255) not null,
+        primary key (id)
+    ) [42001-214]
+2022-07-26 00:36:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from [*]user user0_ where user0_.id=?"; expected "identifier"; SQL statement:
+select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from user user0_ where user0_.id=? [42001-214]
+2022-07-26 00:36:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a       id varchar(255) not null,\000d\000a        favorite_food varchar(255) not null,\000d\000a        nickname varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+       id varchar(255) not null,
+        favorite_food varchar(255) not null,
+        nickname varchar(255) not null,
+        primary key (id)
+    ) [42001-214]
+2022-07-26 00:37:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from [*]user user0_ where user0_.id=?"; expected "identifier"; SQL statement:
+select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from user user0_ where user0_.id=? [42001-214]
+2022-07-26 00:38:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a       id varchar(255) not null,\000d\000a        favorite_food varchar(255) not null,\000d\000a        nickname varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+       id varchar(255) not null,
+        favorite_food varchar(255) not null,
+        nickname varchar(255) not null,
+        primary key (id)
+    ) [42001-214]
+2022-07-26 01:48:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a       id varchar(255) not null,\000d\000a        favorite_food varchar(255) not null,\000d\000a        nickname varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+       id varchar(255) not null,
+        favorite_food varchar(255) not null,
+        nickname varchar(255) not null,
+        primary key (id)
+    ) [42001-214]
+2022-07-26 01:52:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from [*]user user0_ where user0_.id=?"; expected "identifier"; SQL statement:
+select user0_.id as id1_0_0_, user0_.favorite_food as favorite2_0_0_, user0_.nickname as nickname3_0_0_ from user user0_ where user0_.id=? [42001-214]
