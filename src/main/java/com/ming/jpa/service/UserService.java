@@ -19,7 +19,7 @@ public class UserService {
     public User createUser() {
         // 테스트 회원 "user1" 객체 추가
         User beforeSavedUser = new User("user1", "권민지", "닭발");
-        // 회원 "user1" 객체를 영속화
+        // 회원 "user1" 객체를 영속화 (DB에 저장이 되면서 1차 캐시가 만들어짐)
         User savedUser = userRepository.save(beforeSavedUser);
 
         // beforeSavedUser: 영속화되기 전 상태의 자바 일반객체
@@ -95,6 +95,7 @@ public class UserService {
         return foundUser;
     }
 
+    // Entity 업데이트 방법 1
     public User updateUser1() {
         // 테스트 회원 "user1" 생성
         User user = new User("user1", "수진", "옥수수");
@@ -113,13 +114,14 @@ public class UserService {
         return savedUser2;
     }
 
-    @Transactional
+    // Entity 업데이트 방법 2
+    @Transactional // 굳이 UserRepository.save() 함수를 호출하지 않아도 함수가 끝나는 시점에 변경 사항을 알아서 update 해 줌
     public User updateUser2() {
         // 테스트 회원 "user1" 생성
         // 회원 "user1" 객체 추가
         User user = new User("user1", "시유", "곱창");
         // 회원 "user1" 객체를 영속화
-        User savedUser = userRepository.save(user);
+        User savedUser = userRepository.save(user); // Transactional 특징이 여기서 DB에 저장안됨
 
         // 회원의 nickname 변경
         savedUser.setNickname("크넌니");
